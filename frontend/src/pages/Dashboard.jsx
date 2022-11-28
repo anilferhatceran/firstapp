@@ -22,8 +22,9 @@ function Dashboard() {
 
     if (!user) {
       navigate("/login");
+    } else {
+      dispatch(getGoals());
     }
-    dispatch(getGoals());
   }, [user, navigate, isError, message, dispatch]);
 
   if (isLoading) {
