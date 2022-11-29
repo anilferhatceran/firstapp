@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { toast } from 'react-toastify'
 
-const API_URL = '/api/goals/'
+const API_URL = 'http://localhost:5000/api/goals/'
 
 // Create new goal
 const createGoal = async (goalData, token) => {
