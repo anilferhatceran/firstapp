@@ -12,9 +12,9 @@ const createGoal = async (goalData, token) => {
     }
     const response = await axios.post(API_URL,goalData,config)
 
-    // if(response.data){
-    //     toast.success('Goal added')
-    // }
+    if(response.data){
+        toast.success('Goal added')
+    }
 
     return response.data
 }
